@@ -1,9 +1,9 @@
 from googleapiclient.discovery import build
-api_key = "AIzaSyAORUA4JPMmdusT6svNYOf3AuGQJFX-diA"
+api_key = "AIzaSyCfjFkEdKqt7jBalDapJaILBzvq6hbAbr4"
 
 youtube = build('youtube', 'v3', developerKey = api_key)
-request = youtube.channels().list(part='statistics', forUsername='woanajoseph')
 
+request = youtube.channels().list(part='contentDetails', forUsername='DanKoeTalks')
 response = request.execute()
 
 print(response)
