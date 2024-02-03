@@ -1,1 +1,2 @@
-a youtube api to request data from channels
+A youtube api to request data from channels
+
